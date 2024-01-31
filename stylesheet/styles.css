@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f0f0; /* Custom background color for area outside of the container */
+}
+
+/* Custom header and footer styling */
+.bg-custom-header, .bg-custom-footer {
+    background-color: #343a40; /* Custom background color */
+    padding: 1rem; /* Padding */
+}
+
+.bg-custom-footer {
+    margin-top: 1rem; /* Top margin for footer */
+}
+
+/* Custom styling for fieldset legends */
+legend {
+    width: auto;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 80%;
+    color: #212529;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Flex container and items setup */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.flex-item-large {
+    flex: 0 0 75%;
+}
+
+/* Responsive design adjustments */
+@media (min-width: 769px) {
+    .flex-item:not(.flex-item-large) {
+        flex: 0 0 25%;
+    }
+
+    /* Specific paragraph hiding/showing for larger screens */
+    .paragraph-hide {
+        display: block;
+    }
+}
+
+/* Default (mobile) styles */
+.paragraph-hide {
+    display: none; /* Hidden by default, shown on larger screens */
+}
+
